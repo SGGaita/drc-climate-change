@@ -1,0 +1,51 @@
+$radius: 10px;
+$padding: 20px;
+$h1-font-size: 2rem;  // Using more descriptive variable name
+
+.container {
+  display: flex;
+  height: 50px;
+  background-color: #fff;  // Using shorthand for white
+  border-radius: $radius;  // Apply border-radius to container
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding;
+
+    .logo {
+      font-size: $h1-font-size;
+      font-weight: 600;
+    }
+
+    .nav {
+      display: flex; // Moved here for better nesting
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        padding: 30px 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size:0.9rem;
+        height:150px;
+
+        &:hover {
+          background-color: #f0f0f0;
+          
+        }
+      }
+    }
+  }
+}

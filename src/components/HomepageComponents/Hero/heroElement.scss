@@ -1,0 +1,55 @@
+.hero-container {
+    display: flex;
+    min-height: 500px;
+
+    .hero-wrapper {
+        padding: 100px;
+        display: flex;
+        align-items: center;
+
+        .text-box {
+            flex: 1;
+
+            .sub-heading {
+                font-size: 1.65rem;
+
+                span{
+                    color:rgb(111, 145, 56);
+                }
+            }
+
+            .heading {
+
+                font-size:1.5rem;
+                text-transform: uppercase;
+                font-weight:700 !important;
+                line-height: 1rem;
+
+            }
+
+            .description{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+
+            .learn-more{
+                .button{
+                    display:flex;
+                    align-items: center;
+                    width:fit-content;
+                    background-color: black;
+                    height:40px;
+                    padding:0 30px;
+                    border-radius: 20px;
+                    color:white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .image {
+            flex: 1;
+        }
+    }
+}
