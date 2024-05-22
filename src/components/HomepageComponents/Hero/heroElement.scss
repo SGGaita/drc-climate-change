@@ -1,9 +1,10 @@
 .hero-container {
-    display: flex;
-    min-height: 500px;
+   // display: flex;
+    max-height: 500px;
+    width:100%;
 
     .hero-wrapper {
-        padding: 100px;
+        padding: 80px;
         display: flex;
         align-items: center;
 
@@ -49,7 +50,10 @@
         }
 
         .image {
+            display: flex;
             flex: 1;
+            justify-content: center;
+           
         }
     }
 }

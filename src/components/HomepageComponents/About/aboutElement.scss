@@ -1,0 +1,82 @@
+.about-container {
+    display: flex;
+    background-color: #c3c3c33b;
+    margin-top: -55px;
+    padding: 120px 80px;
+
+    .wrapper {
+        display: flex;
+        // flex-direction: row;
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+
+            .headings {
+                h3{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+                h2 {
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 20%;
+                       border-radius: 4px;
+                        /* Adjust width as needed */
+                        height: 4px;
+                        /* Adjust height as needed */
+                        background-color: rgb(111, 145, 56);
+                        /* Adjust color as needed */
+                        margin-top: -15px;
+                        /* Adjust margin as needed */
+                        margin-left: 250px;
+                        /* Adjust margin as needed */
+
+                    }
+                }
+
+            }
+
+            .bottom {
+                display: flex;
+
+                .description {
+                    flex: 3;
+                    padding:0 40px 0 0px;
+                }
+
+                .sponsor {
+                    flex: 1;
+
+                    .heading{
+                        h3{
+
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            &::after{
+                                content: "";
+                        display: block;
+                        width: 40%;
+                       
+                        /* Adjust width as needed */
+                        height: 2px;
+                        /* Adjust height as needed */
+                        background-color: rgb(111, 145, 56);
+                        /* Adjust color as needed */
+                        margin-top: -15px;
+                        /* Adjust margin as needed */
+                        margin-left: 150px;
+                        /* Adjust margin as needed */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

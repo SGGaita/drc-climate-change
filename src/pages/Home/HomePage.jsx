@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './homeElement.scss';
 
-import { NavbarComponent,HeroComponent } from '../../components';
+import { NavbarComponent,HeroComponent, ForecastComponent, AboutHub } from '../../components';
 
 
 
 export const HomePage = ({menuData}) => {
  
   return (
-    <div>
+    <div className='home-container'>
       <HeroComponent/>
+      <ForecastComponent/>
+      <AboutHub/>
     </div>
   );
 };

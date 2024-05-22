@@ -1,12 +1,15 @@
 $radius: 10px;
 $padding: 20px;
-$h1-font-size: 2rem;  // Using more descriptive variable name
+$h1-font-size: 2rem; // Using more descriptive variable name
 
 .container {
   display: flex;
-  height: 50px;
-  background-color: #fff;  // Using shorthand for white
-  border-radius: $radius;  // Apply border-radius to container
+  height: 70px;
+  background-color: #fff; // Using shorthand for white
+  //border-radius: $radius;  // Apply border-radius to container
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
   .wrapper {
     display: flex;
@@ -38,12 +41,13 @@ $h1-font-size: 2rem;  // Using more descriptive variable name
       a {
         text-decoration: none;
         color: inherit;
-        font-size:0.9rem;
-        height:150px;
+        font-size: 0.9rem;
+        height: 150px;
+        font-weight: 600;
 
         &:hover {
           background-color: #f0f0f0;
-          
+
         }
       }
     }

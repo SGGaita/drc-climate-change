@@ -1,6 +1,8 @@
 import React from 'react'
 import './heroElement.scss'
 import { Link } from 'react-router-dom'
+import { images } from '../../../constants'
+
 
 export const HeroComponent = () => {
     return (
@@ -27,7 +29,7 @@ export const HeroComponent = () => {
                 </div>
 
                 <div className="image">
-                    <h1>image</h1>
+                    <img src={images.hero}  height={300} width={300}/>
                 </div>
             </div>
 

@@ -3,22 +3,7 @@ import './navbarElement.scss'
 import { Link } from 'react-router-dom';
 
 export const NavbarComponent = ({menuData}) => {
-  const [logoUrl, setLogoUrl] = useState('');
-
-  useEffect(() => {
-    const fetchLogoUrl = async () => {
-      try {
-        const response = await fetch('https://nbps-alumni.co.ke//wp-json/wp/v2'); // Replace with your actual endpoint
-       // const logoData = response.data.find(item => item.title === 'Site Logo'); // Assuming logo data is stored in Settings
-        //setLogoUrl(logoData.value);
-        console.warn("Logo data", response)
-      } catch (error) {
-        console.error('Error fetching logo URL:', error);
-      }
-    };
-
-    fetchLogoUrl();
-  }, []);
+ 
  
   // Function to render menu items
   const renderMenuItems = () => {

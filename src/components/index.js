@@ -1,3 +1,5 @@
 export * from './Navbar/NavbarComponent'
 export * from './Footer/Footer'
 export * from './HomepageComponents/Hero/HeroComponent'
+export * from './HomepageComponents/Forecast/ForecastComponent'
+export * from './HomepageComponents/About/AboutHub'
